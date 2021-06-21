@@ -6,3 +6,36 @@ interface Teacher {
     location: string;
     [propName: string]: any;
 }
+
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
+
+interface printTeacherFunction {
+        (firstName: string, lastName: string): string;
+}
+
+let printTeacher: printTeacherFunction;
+printTeacher = function (firstName: string, lastName: string): string {
+    return `${firstName[0]}. ${lastName}`
+}
+class StudentClass implements StudentInterface {
+	firstName: string;
+	lastName: string;
+	constructor(firstName: string, lastName: string) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	workOnHomework() { return 'Currently working'; }
+	displayName() { return this.firstName; }
+}
+interface StudentInterface {
+	readonly firstName: string;
+	readonly lastName: string;
+	workOnHomework(): string;
+	displayName(): string;
+}
+interface StudentConstructor {
+	new(firstName: string, lastName: string): StudentInterface;
+}
