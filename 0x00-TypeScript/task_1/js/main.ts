@@ -15,9 +15,8 @@ interface printTeacherFunction {
         (firstName: string, lastName: string): string;
 }
 
-let printTeacher: printTeacherFunction;
-printTeacher = function (firstName: string, lastName: string): string {
-    return `${firstName[0]}. ${lastName}`
+export const printTeacher: printTeacherFunction =  (firstName: string, lastName: string): string => { 
+    return `${firstName[0]}. ${lastName}`;
 }
 class StudentClass implements StudentInterface {
 	firstName: string;
