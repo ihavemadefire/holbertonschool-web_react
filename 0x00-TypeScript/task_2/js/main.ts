@@ -26,15 +26,15 @@ export function createEmployee(salary: number | string): Director | Teacher {
 	if (typeof salary === 'number' && salary < 500) return new Teacher;
 	return new Director;
 }
-function isDirector(employee: Director | Teacher): employee is Director {
+export function isDirector(employee: Director | Teacher): employee is Director {
 	return employee instanceof Director;
 }
-function executeWork(employee: Director | Teacher): void {
+export function executeWork(employee: DirectorInterface | TeacherInterface): void {
 	if (!isDirector(employee)) console.log(employee.workTeacherTasks());
 	else console.log(employee.workDirectorTasks());
 }
 type Subjects = 'Math' | 'History';
-function teachClass (todayClass: Subjects){
+export function teachClass (todayClass: Subjects){
     if (todayClass === 'History') return 'Teaching History';
 	return 'Teaching Math';
 }
