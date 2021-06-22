@@ -21,11 +21,8 @@ export class Teacher implements TeacherInterface {
     getCoffeeBreak(): string {return 'Cannot have a break';}
     workTeacherTasks(): string { return 'Getting to work';}
 }
-interface createEmployeeFunction {
-	(salary: number | string): Director | Teacher
-}
-let createEmployee: createEmployeeFunction;
-createEmployee = function (salary: number | string): Director | Teacher {
+
+export function createEmployee(salary: number | string): Director | Teacher {
 	if (typeof salary === 'number' && salary < 500) return new Teacher();
 	return new Director();
 }
