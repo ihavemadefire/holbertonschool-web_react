@@ -29,9 +29,9 @@ export function createEmployee(salary: number | string): Director | Teacher {
 export function isDirector(employee: Director | Teacher): employee is Director {
 	return employee instanceof Director;
 }
-export function executeWork(employee: DirectorInterface | TeacherInterface): void {
-	if (!isDirector(employee)) console.log(employee.workTeacherTasks());
-	else console.log(employee.workDirectorTasks());
+export function executeWork(employee: DirectorInterface | TeacherInterface): string {
+	if (!isDirector(employee)) return employee.workTeacherTasks();
+	else return employee.workDirectorTasks();
 }
 type Subjects = 'Math' | 'History';
 export function teachClass (todayClass: Subjects){
