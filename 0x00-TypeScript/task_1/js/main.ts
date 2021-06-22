@@ -23,14 +23,14 @@ interface StudentConstructor {
 	new(firstName: string, lastName: string): StudentInterface;
 }
 
-interface StudentInterface {
+interface StudentClassInterface {
 	firstName: string;
 	lastName: string;
 	workOnHomework(): string;
 	displayName(): string;
 }
 
-export const StudentClass: StudentConstructor = class StudentClass implements StudentInterface {
+export const StudentClass: StudentConstructor = class StudentClass implements StudentClassInterface {
 	firstName: string;
 	lastName: string;
 	constructor(firstName: string, lastName: string) {
