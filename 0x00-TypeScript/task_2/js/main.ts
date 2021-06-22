@@ -10,16 +10,16 @@ interface  TeacherInterface {
     workTeacherTasks(): string;
 }
 
-class Director implements DirectorInterface {
-    workFromHome() {return 'Working from home';}
-    getCoffeeBreak() {return 'Getting a coffee break';}
-    workDirectorTasks() { return 'Getting to director tasks';}
+export class Director implements DirectorInterface {
+    workFromHome(): string {return 'Working from home';}
+    getCoffeeBreak(): string {return 'Getting a coffee break';}
+    workDirectorTasks(): string { return 'Getting to director tasks';}
 }
 
-class Teacher implements TeacherInterface {
-    workFromHome() {return 'Cannot work from home';}
-    getCoffeeBreak() {return 'Cannot have a break';}
-    workTeacherTasks() { return 'Getting to work';}
+export class Teacher implements TeacherInterface {
+    workFromHome(): string {return 'Cannot work from home';}
+    getCoffeeBreak(): string {return 'Cannot have a break';}
+    workTeacherTasks(): string { return 'Getting to work';}
 }
 interface createEmployeeFunction {
 	(salary: number | string): Director | Teacher
