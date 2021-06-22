@@ -20,7 +20,7 @@ export const printTeacher: printTeacherFunction =  (firstName: string, lastName:
 }
 
 interface StudentConstructor {
-	new(firstName: string, lastName: string): StudentInterface;
+	new(firstName: string, lastName: string): StudentClassInterface;
 }
 
 interface StudentClassInterface {
