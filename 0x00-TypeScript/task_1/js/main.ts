@@ -18,7 +18,19 @@ interface printTeacherFunction {
 export const printTeacher: printTeacherFunction =  (firstName: string, lastName: string): string => { 
     return `${firstName[0]}. ${lastName}`;
 }
-class StudentClass implements StudentInterface {
+
+interface StudentConstructor {
+	new(firstName: string, lastName: string): StudentInterface;
+}
+
+interface StudentInterface {
+	firstName: string;
+	lastName: string;
+	workOnHomework(): string;
+	displayName(): string;
+}
+
+export const StudentClass: StudentConstructor = class StudentClass implements StudentInterface {
 	firstName: string;
 	lastName: string;
 	constructor(firstName: string, lastName: string) {
@@ -28,13 +40,4 @@ class StudentClass implements StudentInterface {
 
 	workOnHomework() { return 'Currently working'; }
 	displayName() { return this.firstName; }
-}
-interface StudentInterface {
-	readonly firstName: string;
-	readonly lastName: string;
-	workOnHomework(): string;
-	displayName(): string;
-}
-interface StudentConstructor {
-	new(firstName: string, lastName: string): StudentInterface;
 }
