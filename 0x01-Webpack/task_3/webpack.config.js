@@ -17,6 +17,13 @@ module.exports = {
 		filename: "[name].bundle.js",
     	path: path.resolve(__dirname, "public")
 	},
+	devtool: 'inline-source-map',
+	optimization: {
+    splitChunks: {
+      // include all types of chunks
+      chunks: 'all',
+    },
+	},
 	performance: {
 		maxAssetSize: 100000,
 	  },
