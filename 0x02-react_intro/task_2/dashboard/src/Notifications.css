@@ -1,4 +1,18 @@
+:root {
+    --holbie-red: #e0354b;
+    --red-red: red;
+    --blue: blue;
+  }
+
 .Notifications {
     padding: 3vw;
-    border: 3px solid #e0344b;
+    border: 3px dashed var(--holbie-red);
 }
+
+li[data-priority="default"] {
+    color: var(--blue);
+  }
+  
+  li[data-priority="urgent"] {
+    color: var(--red-red);
+  }
