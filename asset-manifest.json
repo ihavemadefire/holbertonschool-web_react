@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/css/main.1c780dc6.chunk.css",
-    "main.js": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/main.9e0f4f34.chunk.js",
-    "main.js.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/main.9e0f4f34.chunk.js.map",
-    "runtime-main.js": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/runtime-main.fa04ea22.js",
-    "runtime-main.js.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/runtime-main.fa04ea22.js.map",
-    "static/js/2.c2122635.chunk.js": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/2.c2122635.chunk.js",
-    "static/js/2.c2122635.chunk.js.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/2.c2122635.chunk.js.map",
-    "static/js/3.4bf463d8.chunk.js": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/3.4bf463d8.chunk.js",
-    "static/js/3.4bf463d8.chunk.js.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/3.4bf463d8.chunk.js.map",
-    "index.html": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/index.html",
-    "static/css/main.1c780dc6.chunk.css.map": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/css/main.1c780dc6.chunk.css.map",
-    "static/js/2.c2122635.chunk.js.LICENSE.txt": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/js/2.c2122635.chunk.js.LICENSE.txt",
-    "static/media/holbie_logo.24bab5d6.jpeg": "/holbertonschool-web_react/0x02-react_intro/task_4/dashboard/static/media/holbie_logo.24bab5d6.jpeg"
+    "main.css": "./static/css/main.1c780dc6.chunk.css",
+    "main.js": "./static/js/main.9e0f4f34.chunk.js",
+    "main.js.map": "./static/js/main.9e0f4f34.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.60066165.js",
+    "runtime-main.js.map": "./static/js/runtime-main.60066165.js.map",
+    "static/js/2.c2122635.chunk.js": "./static/js/2.c2122635.chunk.js",
+    "static/js/2.c2122635.chunk.js.map": "./static/js/2.c2122635.chunk.js.map",
+    "static/js/3.4bf463d8.chunk.js": "./static/js/3.4bf463d8.chunk.js",
+    "static/js/3.4bf463d8.chunk.js.map": "./static/js/3.4bf463d8.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.1c780dc6.chunk.css.map": "./static/css/main.1c780dc6.chunk.css.map",
+    "static/js/2.c2122635.chunk.js.LICENSE.txt": "./static/js/2.c2122635.chunk.js.LICENSE.txt",
+    "static/media/holbie_logo.24bab5d6.jpeg": "./static/media/holbie_logo.24bab5d6.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fa04ea22.js",
+    "static/js/runtime-main.60066165.js",
     "static/js/2.c2122635.chunk.js",
     "static/css/main.1c780dc6.chunk.css",
     "static/js/main.9e0f4f34.chunk.js"
