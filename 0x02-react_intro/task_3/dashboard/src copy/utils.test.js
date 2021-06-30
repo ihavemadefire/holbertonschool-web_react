@@ -1,3 +1,4 @@
+
 const { getFullYear, getFooterCopy, getLatestNotification } = require('./utils');
 
 test('Year returns 2021', () => {
