@@ -1,8 +1,7 @@
-
 const { getFullYear, getFooterCopy, getLatestNotification } = require('./utils');
 
 test('Year returns 2021', () => {
-  expect(getFullYear()).toBe("2021");
+  expect(getFullYear().toString()).toBe("2021");
 })
 
 test('getFooterCopy works for both true and false', () => {
