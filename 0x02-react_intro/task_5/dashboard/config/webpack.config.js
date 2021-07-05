@@ -1,22 +1,38 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require('path')
+
 
 module.exports = {
-    entry: './src/index.js',
-    output: {
-      filename: 'bundle.js',
-    },
-    mode: 'development',
-    module: {
-      rules: [
+  context: path.resolve(__dirname, '../src'),
+	entry: './index.js',
+	output: {
+		path: path.resolve('./public'),
+		filename: 'bundle.js',
+		clean: true,
+	},
+  devtool: 'inline-source-map',
+  mode: 'development',
+  devServer: {
+    contentBase: path.resolve('/dist/index.html'),
+    compress: true,
+    hot: true,
+    port: 8564,
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx'],
+  },
+  module: {
+    rules: [
         {
-          test: /\.css$/i,
-          use: ['style-loader', 'css-loader'],
+          test: /\.js$/,
+          enforce: "pre",
+          use: ["source-map-loader"],
         },
         {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          // type: 'asset/resource',
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+        {
+          test: /\.(gif|png|jpe?g|svg)$/i,
           use: [
             'file-loader',
             {
@@ -33,18 +49,6 @@ module.exports = {
           exclude: /node_modules/,
           use: ['babel-loader'],
         },
-      ],
-    },
-    resolve: {
-      extensions: ['*', '.js', '.jsx'],
-    },
-    devServer: {
-      // contentBase: './dist',
-      compress: true,
-      hot: true,
-      // port: 8564,
-    },
-    devtool: 'inline-source-map',
-    plugins: [new HtmlWebpackPlugin({ template: './dist/index.html' })],
-  }
-  
+      ]
+    }
+}
