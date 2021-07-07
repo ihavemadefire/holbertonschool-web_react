@@ -1,7 +1,8 @@
+import React from 'react'
 import logo from '../assets/holbie_logo.jpeg';
 import { getFullYear, getFooterCopy } from '../utils/utils';
 import './App.css';
-import {Notifications} from '../Notifications/Notifications'
+import Notifications from '../Notifications/Notifications'
 
 function App() {
   return (
