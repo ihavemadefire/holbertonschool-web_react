@@ -4,7 +4,7 @@ test('Year returns 2021', () => {
   expect(getFullYear().toString()).toBe("2021");
 })
 
-test('getFooterCopy works for true', () => {
+test('getFooterCopy works for true ', () => {
   expect(getFooterCopy(true)).toBe("Holberton School");
 })
 
