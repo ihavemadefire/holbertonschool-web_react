@@ -5,13 +5,13 @@
     align-items: right;
     font-size: 20px;
     border-bottom: 3px solid #e0344b;
-}
+  }
   
-.App-header h1 {
+  .App-header h1 {
     margin: auto 0 auto 0;
-}
+  }
 
-.App-logo {
+  .App-logo {
     height: 25vmin;
     pointer-events: none;
-}
+  }

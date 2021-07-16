@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
+import { getFullYear, getFooterCopy } from '../utils/utils';
 import './App.css';
-import './App.test';
-import Notifications from '../Notifications/Notifications';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import Login from '../Login/Login';
+import Notifications from '../Notifications/Notifications'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
+import Login from '../Login/Login'
 
 function App() {
   return (

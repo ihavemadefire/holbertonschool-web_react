@@ -9,7 +9,6 @@ describe('<Header />', () => {
         const wrapper = shallow(<Header />);
         expect(wrapper.exists());
     });
-
     it('render Header; check contents', () => {
         const wrapper = shallow(<Header />);
         expect(wrapper.find('header.App-header h1').exists());

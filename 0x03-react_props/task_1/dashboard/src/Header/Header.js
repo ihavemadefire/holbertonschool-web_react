@@ -1,6 +1,5 @@
-import React from 'react';
+import React from 'react'
 import './Header.css';
-import './Header.test'
 import logo from '../assets/holbie_logo.jpeg';
 
 function Header() {
