@@ -1,0 +1,16 @@
+.App-header {
+
+    color: #e0344b;
+    display: flex;
+    align-items: right;
+    font-size: 20px;
+  }
+  
+  .App-header h1 {
+    margin: auto 0 auto 0;
+  }
+
+  .App-logo {
+    height: 25vmin;
+    pointer-events: none;
+  }
