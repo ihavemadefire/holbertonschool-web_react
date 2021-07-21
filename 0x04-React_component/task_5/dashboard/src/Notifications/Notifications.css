@@ -1,0 +1,30 @@
+:root {
+    --holbie-red: #e0354b;
+    --red-red: red;
+    --blue: blue;
+  }
+
+.menuItem {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Notifications {
+    padding: 3vw;
+    border: 3px dashed var(--holbie-red);
+    float: right;
+}
+
+[displayDrawer=True]{
+  display: none;
+}
+
+[data-notification-type="default"] {
+    color: var(--blue);
+  }
+  
+[data-notification-type="urgent"] {
+    color: var(--red-red);
+  }
