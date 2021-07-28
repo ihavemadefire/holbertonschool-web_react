@@ -1,3 +1,5 @@
+Executable File  6 lines (4 sloc)  227 Bytes
+  
 import { List, Map } from 'immutable';
 
 const concatElements = (page1, page2) => List(page1).concat(List(page2));
