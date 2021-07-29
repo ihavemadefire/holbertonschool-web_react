@@ -1,4 +1,3 @@
-
 import { Seq } from 'immutable';
 
 const printBestStudents = (object) => {
